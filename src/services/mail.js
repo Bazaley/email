@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { pass, user } from "../../app.js";
+import { pass, user } from "../../api/index.js";
 
 const mail = async ({ name, phone }) => {
   try {
