@@ -12,7 +12,7 @@ export const user = process.env.USER;
 app.use(express.json());
 app.use(cors());
 
-app.use("/", mailRouter);
+app.use("/api", mailRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });
